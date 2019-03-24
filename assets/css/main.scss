@@ -13,3 +13,22 @@ $primary-color: {{ .Site.Params.style.primaryColor | default "#57cc8a" }};
 @import 'components/posts_list';
 @import 'components/tag';
 
+// custom styles
+.utube-player {
+	width: 630px;
+	margin: 0px auto;
+	overflow: hidden;
+	border-radius: .5em;
+	border: 5px solid #57cc8a;
+}
+
+@media screen and (max-width: 1024px) {
+	
+	.utube-player {
+		width: 100%;
+	}
+	
+	.app-container {
+		padding: 1.5rem;
+	}
+}
