@@ -22,6 +22,10 @@ $primary-color: {{ .Site.Params.style.primaryColor | default "#57cc8a" }};
 	border: 5px solid #57cc8a;
 }
 
+.image-holder {
+	overflow:hidden;
+}
+
 @media screen and (max-width: 1024px) {
 	
 	.utube-player {
