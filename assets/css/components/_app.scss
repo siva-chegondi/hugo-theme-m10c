@@ -1,5 +1,5 @@
 .app-header {
-  padding: 2.5em;
+  padding: 2em;
   background: $darkest-color;
   text-align: center;
 }
@@ -29,12 +29,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 20rem;
+    width: 17rem;
     min-height: 100vh;
   }
 
   .app-container {
-    max-width: 65rem;
-    margin-left: 20rem;
+    max-width: 68rem;
+    margin-left: 17rem;
   }
 }
