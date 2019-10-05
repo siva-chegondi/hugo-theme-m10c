@@ -1,12 +1,14 @@
 {{ define "main" }}
-  <article>
+  <article class="posts">
     <h1>Posts</h1>
     <ul class="posts-list">
       {{ range $index, $element := .Paginator.Pages }}
         <li class="posts-list-item">
           <a class="posts-list-item-title" href="{{ .Permalink }}">{{ .Title }}</a>
           <span class="posts-list-item-description">
-            <span>{{ if isset . "Category"}} Set {{else}} others {{end}}</span>
+            {{ if isset .Params "categories"}}
+                <span class="tag">{{ index .Params.categories 0 }}</span>
+            {{end}}
             {{ partial "icon.html" (dict "ctx" $ "name" "clock") }} {{ .ReadingTime }} min read -
             {{ .PublishDate.Format "Jan 2, 2006" }}
           </span>
@@ -14,5 +16,18 @@
       {{ end }}
     </ul>
     {{ partial "pagination.html" $ }}
+  </article>
+
+  <article>
+    <div class="categories">
+      <h1>Categories</h1>
+      <ul class="categories-list">
+        {{ range $category, $pages := .Site.Taxonomies.categories}}
+            <li class="category">
+                <a href="/categories/{{ $category }}" class="cat-link">{{ $category }} - [{{len $pages }}]</a>
+            </li>
+        {{ end }}
+      </ul>
+    </div>
   </article>
 {{ end }}
