@@ -2,7 +2,6 @@
   padding: 2em;
   background: $darkest-color;
   text-align: center;
-  box-shadow: 5px 0 10px -5px #474747;
 }
 
 .app-header-avatar {
@@ -27,22 +26,15 @@
 
 .app-container {
     & > article {
-        flex: 1;
 
         & > .categories {
             width: 100%;
             margin: 0 auto;
             line-height: 2;
             margin-top: 2em;
-            padding: 1em 4em;
+            padding: 1em 2em;
             font-weight: bold;
-            border: 2px dashed #1087c8;
-
-            @media screen and (min-width: 1024px){
-                width: 320px;
-                float: right;
-                text-align: right;
-            }
+            border: 2px dashed $primary-color;
 
             h1 { margin: 0; }
 
@@ -52,6 +44,7 @@
 
                 & .cat-link {
                     line-height: 2;
+                    color: #898989;
                     text-transform: capitalize;
                 }
             }
@@ -61,16 +54,20 @@
 
 @media (min-width: 940px) {
   .app-header {
-    position: fixed;
     top: 0;
     left: 0;
-    width: 20rem;
+    width: 35em;
+    position: fixed;
     min-height: 100vh;
+
+    & > p {
+        width: 63%;
+        margin: 1em auto;
+        font-size: 1.4em;
+    }
   }
 
   .app-container {
-    display: flex;
-    max-width: 80rem;
-    margin-left: 20rem;
+    margin-left: 35em;
   }
 }

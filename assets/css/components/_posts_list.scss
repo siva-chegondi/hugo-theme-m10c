@@ -6,19 +6,24 @@
 .posts-list-item {
   list-style: none;
   padding: .5em 0;
+  padding-bottom: 1em;
   margin-bottom: .5em;
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+  border-bottom: 2px dashed rgba(0, 0, 0, .2);
+
+  &:last-child {
+      border-bottom: 0;
+  }
 
   .posts-list-item-title {
-      font-size: 1.1em;
+      font-size: 1.2em;
   }
 
   .cat-tag {
-      float: right;
-      color: white;
+      margin-left: .5em;
+      color: $primary-color;
       padding: 0 .5em;
       border-radius: 3px;
-      border: 1px solid gray;
+      border: 1px solid lightgray;
   }
 }
 
