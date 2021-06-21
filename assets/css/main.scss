@@ -24,6 +24,18 @@ $primary-color: {{ .Site.Params.style.primaryColor | default "#57cc8a" }};
 
 .image-holder {
 	overflow:hidden;
+
+	@media all and (max-width: 1024px){
+		margin: 0;
+
+		& > img {
+			width: 100%;
+		}
+	}
+}
+
+.app-container {
+	padding: 0 2.5em;
 }
 
 @media screen and (max-width: 1024px) {

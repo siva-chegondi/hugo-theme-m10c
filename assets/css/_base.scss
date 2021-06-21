@@ -14,7 +14,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $lightest-color;
+  line-height: 1.5;
+  color: #1078c8;
+  letter-spacing: 2px;
+	font-family: "Montserrat", "Roboto Slab", "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 28px;
 }
 
 a {
