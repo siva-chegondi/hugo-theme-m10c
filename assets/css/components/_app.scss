@@ -2,14 +2,14 @@
   padding: 2em;
   color: white;
   text-align: center;
-  background-color: #272747;
+  background-color: #123545;
 }
 
 .app-header-avatar {
-  max-width: 10rem;
-  max-height: 10rem;
+  max-width: 9rem;
+  max-height: 9rem;
   border-radius: 50%;
-  border: 0.5rem solid $primary-color;
+  border: 5px solid $primary-color;
 }
 
 .app-container {
@@ -65,7 +65,7 @@
     & > p {
         width: 75%;
         margin: 1em auto;
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
   }
 
