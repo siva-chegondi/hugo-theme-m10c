@@ -27,14 +27,16 @@
 
 .app-container {
     & > article {
+      padding: 1em 0;
+      border-top: 1px solid #e7e7e7;
 
         & > .categories {
             width: 100%;
-            margin: 0 auto;
             line-height: 2;
             margin-top: 2em;
             padding: 1em 2em;
             font-weight: bold;
+            max-width: 600px;
             border: 2px dashed $primary-color;
 
             h1 { margin: 0; }
@@ -44,10 +46,8 @@
                 list-style: none;
 
                 & .cat-link {
-                    line-height: 2;
-                    color: #898989;
-                    font-weight: normal;
-                    text-transform: capitalize;
+                  text-transform: uppercase;
+                  font: bold 13px/2 'Roboto',sans-serif;
                 }
             }
         }
