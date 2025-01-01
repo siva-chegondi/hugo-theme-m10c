@@ -1,3 +1,12 @@
+
+.posts {
+
+  & > h2 {
+    font-weight: 500;
+    color: $lightest-color;
+  }
+}
+
 .posts-list {
   width: 100%;
   padding: 0;
@@ -15,7 +24,7 @@
   }
 
   .posts-list-item-title {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 1.2;
       margin-bottom: .5em;
       display: inline-block;
